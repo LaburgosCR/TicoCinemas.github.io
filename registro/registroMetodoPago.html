@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 1.Archivo de reset General -->
+    <link rel="stylesheet" href="/css/reset.css">
+
+    <!--2. Archivos de google font General-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script src="https://kit.fontawesome.com/5185a7a81a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Secular+One&display=swap" rel="stylesheet">
+
+    <!--estilos archivo css-->
+    <link rel="stylesheet" href="/css/registro/registroMetodoPago.css">
+    <link rel="stylesheet" href="/css/general.css">
+    <title>Registro método de pago</title>
+</head>
+
+<body>
+    <header class="header-principal">
+        <div class="logo">
+            <a href="/html/index.html">
+                <img src="/img/logo2.jpeg" alt="">
+            </a>
+        </div>
+        <nav>
+            <button class="btn-general ">
+                <a href="/html/menus/menuCartelera.html "> Cartelera</a>
+                </button>
+            <button class="btn-general ">
+                    <a href="/html/registro/perfilDeUsuario.html">Perfil</a>
+                </button>
+            <button class="btn-general ">
+                    <a href="/html/compras/carritoDeCompras.html "> 
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </button>
+            <button class="btn-general ">
+                    <a href="/html/index.html "> 
+                        <i class="fas fa-home"></i>
+                    </a>
+                </button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-rPago">
+
+            <div class="formulario">
+                <div>
+                    <h1 class="h1-rPago">Registre su método de pago</h1>
+                </div>
+                <div class="bloques">
+                    <div class="bloque1">
+
+                        <form action="/action_page.php" class="form-rPago" id="form-rPago">
+                            <div class="col-infoGeneral-rPago">
+                                <h3 class="h3-rPago">Dirección</h3>
+                                <label for="nombre-rPago"> Nombre Usuario:</label>
+                                <input type="text" id="fname" name="firstname" placeholder="Luis" disabled>
+                                <label for="email-rPago"> Correo Electrónico:</label>
+                                <input type="text" id="email" name="email" placeholder="luis@hotmail.com" disabled>
+                                <label for="dir-rPago"> Dirección</label>
+                                <input type="text" id="txt-adr" name="address" required>
+                                <label for="provincia"> Seleccionar provincia: </label>
+                                <select name="provincia" id="slt-provincias" placeholder="Ingrese código" required>
+                                    <option value="0">Seleccionar</option>
+                                    <option value="1">San José</option>
+                                    <option value="2">Heredia</option>
+                                    <option value="3">Cartago</option> 
+                                    <option value="3">Guanacaste</option> 
+                                    <option value="3">Puntarenas</option> 
+                                    <option value="3">Limón</option> 
+                                </select>
+                                <label for="canton"> Seleccionar cantón: </label>
+                                <select name="canton" id="slt-cantones" required>
+                                    <option value="">Seleccionar</option>
+                                    <option value="San José">San José</option>
+                                    <option value="Escazú">Escazú</option>
+                                    <option value="Desamparados">Desamparados</option> 
+                                    <option value="Puriscal">Puriscal</option> 
+                                    <option value="Tarrazú">Tarrazú</option> 
+                                    <option value="Aserrí">Aserrí</option> 
+                                    <option value="Mora">Mora</option> 
+                                    <option value="Goicoechea">Goicoechea</option> 
+                                    <option value="Santa Ana">Santa Ana</option> 
+                                    <option value="Alajuelita">Alajuelita</option> 
+                                    <option value="Vásquez de Coronado">Vásquez de Coronado</option> 
+                                    <option value="Acosta">Acosta</option> 
+                                    <option value="Tibás">Tibás</option> 
+                                    <option value="Moravia">Moravia</option> 
+                                    <option value="Montes de Oca">Montes de Oca</option> 
+                                    <option value="Turrubares">Turrubares</option> 
+                                    <option value="Dota">Dota</option> 
+                                    <option value="Pérez Zeledón">Pérez Zeledón</option>
+                                    <option value="Curridabat">Curridabat</option>  
+                                    <option value="León Cortés">León Cortés</option>  
+                                </select>
+                                <label for="distrito"> Seleccionar distrito: </label>
+                                <select name="distrito" id="slt-distritos" required>
+                                    <option value="">Seleccionar</option>
+                                    <option value="Santa Ana">Santa Ana</option>
+                                    <option value="Salitral">Salitral</option>
+                                    <option value="Pozos">Pozos</option>
+                                    <option value="Uruca">Uruca</option> 
+                                    <option value="Piedades">Piedades</option> 
+                                    <option value="Brasil">Brasil</option> 
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="bloque2">
+
+                        <form action="/action_page.php" class="form-rPago2">
+                            <div class="col-infoGeneral-rPago">
+                                <h3 class="h3-rPago">Método de pago</h3>
+                                <label for="fname">Tarjetas aceptadas</label>
+                                <div class="icon-container-rPago">
+                                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                                </div>
+                                <div class="infocc-rPago">
+                                    <label for="cname-rPago">Nombre en la tarjeta:</label>
+                                    <input type="text" id="cname-rPago" name="cardname" required>
+                                    <label for="ccnum-rPago">Número de tarjeta:</label>
+                                    <input type="text" id="ccnum-rPago" name="numeroTarjeta" required>
+                                    <label for="exmes-rPago">Mes Expiración</label>
+                                    <input type="text" id="exmes-rPago" name="exmes-rPago" required>
+                                    <label for="expanno-rPago">Año Expiración:</label>
+                                    <input type="text" id="expanno-rPago" name="expanno-rPago" required>
+                                    <label for="cvv-rPago">CVV:</label>
+                                    <input type="text" id="cvv-rPago" name="cvv-rPago" required>
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+                <div class="btn-form-guardar">
+                    <button type="button" class="btn-general" id="agregarPago">
+                        <a href="">Agregar</a> 
+                        </button>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <!--JavaScript-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/servicios-general.js"></script>
+    <script src="/js/registro/registroMetodoPago.js"></script>
+    <script src="/js/compras/carritoDeCompras.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <!--Footer G-->
+    <footer>
+        <div class=" container ">
+            <!--Todo class debe llevar la sección a la que peretenece-->
+            <div class="row ">
+                <div class="columna ">
+                    <img src=" " class="logo-footer ">
+                    <h8>
+                        ¿Quiénes somos?
+                    </h8>
+                </div>
+                <div class="columna ">
+                    <h8>
+                        Redes Sociales
+                    </h8>
+                    <ul class="redes ">
+                        <li>
+                            <a href="# ">
+                                <i class="fab fa-facebook-square "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <i class="fab fa-linkedin "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <i class="fab fa-instagram "></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="columna ">
+                    <h8>
+                        Contáctenos
+                    </h8>
+                    <ul class="contactos ">
+                        <li>
+                            <a href="https://api.whatsapp.com/send/?phone=50683077557&text=Hola+Tico-Cinemas te saluda+&app_absent=0 ">
+                                <i class="fab fa-whatsapp "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <i class="far fa-envelope "></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="barra-footer ">
+            &copy; Derechos Reservados - 2021
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

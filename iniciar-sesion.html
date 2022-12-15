@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 1.Archivo de reset -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!--2. Archivos de google font G-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/5185a7a81a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Secular+One&display=swap" rel="stylesheet">
+
+    <!--estilo archivo css-->
+    <link rel="stylesheet" href="/css/iniciar-sesion.css">
+    <link rel="stylesheet" href="/css/general.css">
+    <title>Inicio-Sesión | Tico-Cinemas</title>
+</head>
+
+<body>
+    <!--Header principal G-->
+    <header class="header-principal">
+        <div class="logo">
+            <a href="/html/index.html">
+                <img src="/img/logo2.jpeg" alt="">
+            </a>
+        </div>
+        <nav>
+            <button class="btn-general ">
+            <a href="/html/index.html "> Registrarse</a>
+            </button>
+            <button class="btn-general ">
+                <a href="/html/index.html "> 
+                    <i class="fas fa-home"></i>
+                </a>
+            </button>
+        </nav>
+    </header>
+    <!--Section central de ingresar datos -->
+    <main>
+        <section class="stc-ingresar">
+            <form>
+                <h1>Iniciar Sesión</h1>
+                <div class="centro">
+                    <div class="input-container input-default div-correo">
+                        <span class="material-icons">
+                            account_circle
+                        </span>
+                        <input type="text" placeholder="Email" id="txt-correo" class="div-correo">
+                    </div>
+                    <div class="input-container input-default div-password">
+                        <span class="material-icons">
+                            lock
+                        </span>
+                        <input type="password" placeholder="Password" id="txt-password" class="div-password">
+                    </div>
+                    <div class="btn-ingresar">
+                        <button type="button" class="btn-general" id="txt-ingresar" class="div-ingresar">
+                         Ingresar
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!--Footer G-->
+    <footer>
+        <div class="container">
+            <!--Todo class debe llevar la sección a la que peretenece-->
+            <div class="row">
+                <div class="columna">
+                    <img src=" " class="logo-footer ">
+                    <h3>
+                        ¿Quiénes somos?
+                    </h3>
+                </div>
+                <div class="columna">
+                    <h3>
+                        Redes Sociales
+                    </h3>
+                    <ul class="redes">
+                        <li>
+                            <a href="# ">
+                                <i class="fab fa-facebook-square "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <i class="fab fa-linkedin "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <i class="fab fa-instagram "></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="columna ">
+                    <h3>
+                        Contáctenos
+                    </h3>
+                    <ul class="contactos">
+                        <li>
+                            <a href="https://api.whatsapp.com/send/?phone=50683077557&text=Hola+Tico-Cinemas te saluda+&app_absent=0 ">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <i class="far fa-envelope"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="barra-footer ">
+            &copy; Derechos Reservados - 2021
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/iniciar-sesion.js"></script>
+    <script src="/js/servicios-general.js"></script>
+
+</body>
+
+</html>

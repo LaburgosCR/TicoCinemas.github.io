@@ -1,0 +1,144 @@
+* {
+    font-family: 'Secular One', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Bowlby One SC', cursive;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+    -webkit-text-stroke: 2px #082032;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    color: #082032;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    padding: 0 15%;
+    border-bottom: 3px solid #08304e;
+    background-color: #ccc;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.bloque1 {
+    width: 50%;
+    display: flex;
+}
+
+form {
+    width: 80%;
+}
+
+.bloque1 form .btn-form-pago .btn-general {
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+.bloque2 {
+    width: 50%;
+}
+
+.bloque2 .user-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.bloque2 .user-image img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: solid white 3px;
+    /*va abarcar todo el espacio del cuadro*/
+    object-fit: cover;
+    /*propiedad que solo funciona para etiquetas img o video*/
+    object-position: center;
+}
+
+.bloque2 .btn-general {
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 50%;
+}
+
+.calendario label {
+    display: block;
+    font: 1rem 'Secular One', sans-serif;
+}
+
+.calendario input,
+label {
+    margin: .4rem 0;
+}
+
+.btn-form-guardar {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.input-default {
+    margin-top: 10px;
+}
+
+.input-default input {
+    display: flex;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 4px;
+}
+
+.notas {
+    color: #8a8a8a;
+    font-size: small;
+    margin-bottom: 5px;
+}
+
+.condiciones {
+    margin-top: 10px;
+}
+
+.condiciones p {
+    margin-top: 10px;
+}
+
+.bloque2 select {
+    border: none;
+    font-size: 13px;
+    padding: 3px;
+    color: black;
+    width: 102%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    display: flex;
+}
+
+.input-error {
+    /*border-bottom: 2px solid #ef5777;*/
+    border: 2px solid #ff0000 !important;
+}
+
+.select-error {
+    /*border-bottom: 2px solid #ef5777;*/
+    border: 2px solid #ff0000 !important;
+}
+
+input[type=date] {
+    color: black;
+}

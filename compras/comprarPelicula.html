@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 1.Archivo de reset -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!--2. Archivos de google font G-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script src="https://kit.fontawesome.com/5185a7a81a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!--3. Estilo archivo css-->
+    <link rel="stylesheet" href="/css/registro/registroMantenimientoDeUsuario.css">
+    <link rel="stylesheet" href="/css/compras/comprarPelicula.css">
+    <link rel="stylesheet" href="/css/general.css">
+
+    <title>Comprar Película | Tico-Cinemas</title>
+</head>
+
+<body>
+    <!--Header principal G-->
+    <header class="header-principal">
+        <div class="logo">
+            <a href="/html/index.html">
+                <img src="/img/logo2.jpeg" alt="">
+            </a>
+        </div>
+        <nav>
+            <button class="btn-general ">
+            <a href="/html/menus/menuCartelera.html "> Cartelera</a>
+            </button>
+            <button class="btn-general ">
+                <a href="/html/registro/perfilDeUsuario.html">Perfil</a>
+            </button>
+            <button class="btn-general ">
+                <a href="/html/compras/carritoDeCompras.html "> 
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            <button class="btn-general ">
+                <a href="/html/index.html "> 
+                    <i class="fas fa-home"></i>
+                </a>
+            </button>
+        </nav>
+    </header>
+
+    <!--Section de central-->
+    <main>
+        <section id="contenedorRegistroButacas">
+            <div class="contenedorButacas">
+                <h2>ETERNALS</h2>
+                <div class="row-registroUsuario">
+                    <div class="col-registroUsuario">
+                        <div class="container-registroButacas">
+                            <form class="form-registroUsuario">
+                                <!--action="/action_page.php"-->
+                                <div class="col-infoGeneral-registroUsuario">
+                                    <div class="info-registroUsuario">
+                                        <div class="input-default">
+                                            <label for="fechaProyeccion">Fecha de la película:</label>
+                                            <label class="datoSeleccionado">11/30/2021</label>
+                                        </div>
+                                        <div class="input-default">
+                                            <label for="horaProyeccion">Cadena de cine:</label>
+                                            <label class="datoSeleccionado">Cinépolis</label>
+                                        </div>
+                                        <div class="input-default">
+                                            <label for="horaProyeccion">Lugar:</label>
+                                            <label class="datoSeleccionado">Terramall</label>
+                                        </div>
+                                        <div class="input-default">
+                                            <label for="horaProyeccion">Hora de la tanda:</label>
+                                            <label class="datoSeleccionado">16:00</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-infoGeneral-registroUsuario">
+                                    <div class="info-registroUsuario">
+                                        <div class="input-default">
+                                            <label for="salaProyeccion">Sala de proyección:</label>
+                                            <label class="datoSeleccionado">3</label>
+
+                                        </div>
+                                        <div class="input-default">
+                                            <label for="cineProyeccion">Tipo de sala:</label>
+                                            <label class="datoSeleccionado">Regular</label>
+                                        </div>
+                                        <div class="input-default">
+                                            <label for="salaProyeccion">Idioma:</label>
+                                            <label class="datoSeleccionado">Inglés</label>
+
+                                        </div>
+                                        <div class="input-default">
+                                            <label for="salaProyeccion">Subtitulos:</label>
+                                            <label class="datoSeleccionado">Español</label>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-infoGeneral-registroUsuario">
+                                    <div class="input-default">
+                                        <label for="cantidadAsientos">Seleccione cantidad de asientos:</label>
+                                        <input type="number" class="div-cantidadAsientos" id="cantidadAsientos" name="cantidadAsientos" placeholder="2" min="0">
+                                    </div>
+                                    <div class="input-default">
+                                        <label for="IDAsientos">Numeración asientos seleccionada:</label>
+                                        <label class="datoSeleccionado">1E,2E</label>
+                                    </div>
+                                    <div class="input-default">
+                                        <label for="CostoAsientos">Costo total:</label>
+                                        <label class="datoSeleccionado">₡4,000.00</label>
+                                    </div>
+                                    <button type="button" class="btn-general" id="añadir-carro">
+                                            
+                                        <a href="/html/compras/carritoDeCompras.html">Añadir al carro</a>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h3>Seleccione los asientos de su preferencia:</h3>
+                <div class="tipoAsientos">
+                    <table class="tbl-opcionesButacas">
+                        <tbody>
+                            <tr>
+                                <td><i class="fas fa-user icon-cog-reservado"></i>Reservado</td>
+                                <td><i class="fas fa-user icon-cog-disponible"></i>Disponible</td>
+                                <td><i class="fas fa-user icon-cog-ley7600"></i>Ley 7600</td>
+                                <td><i class="fas fa-user icon-cog-covid"></i>Restricción</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="dibujoSala">
+                    <div class="pantalla">
+                        <p>Pantalla</p>
+                    </div>
+                    <table class="tbl-butacas">
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                            </tr>
+                            <tr>
+                                <td>A</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                            </tr>
+                            <tr>
+                                <td>B</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                            </tr>
+                            <tr>
+                                <td>C</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                            </tr>
+                            <tr>
+                                <td>D</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                            </tr>
+                            <tr>
+                                <td>E</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                            </tr>
+                            <tr>
+                                <td>F</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                                <td><i class="fas fa-user"></i></td>
+                            </tr>
+                            <tr>
+                                <td>G</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <!--JavaScript-->
+    <script src="/js/registro/reigstroMantenimientoDeUsuario.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11 ">
+    </script>
+
+    <!--Footer G-->
+    <footer>
+        <div class="container">
+            <!--Todo class debe llevar la sección a la que peretenece-->
+            <div class="row">
+                <div class="columna">
+                    <img src=" " class="logo-footer ">
+                    <h8>
+                        ¿Quiénes somos?
+                    </h8>
+                </div>
+                <div class="columna ">
+                    <h8>
+                        Redes Sociales
+                    </h8>
+                    <ul class="redes ">
+                        <li>
+                            <a href="# ">
+                                <i class="fab fa-facebook-square "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <i class="fab fa-linkedin "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <i class="fab fa-instagram "></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="columna ">
+                    <h8>
+                        Contáctenos
+                    </h8>
+                    <ul class="contactos ">
+                        <li>
+                            <a href="https://api.whatsapp.com/send/?phone=50683077557&text=Hola+Tico-Cinemas te saluda+&app_absent=0 ">
+                                <i class="fab fa-whatsapp "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <i class="far fa-envelope "></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="barra-footer ">
+            &copy; Derechos Reservados - 2021
+        </div>
+    </footer>
+</body>
+
+</html>

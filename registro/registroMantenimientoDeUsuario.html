@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 1.Archivo de reset -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!--2. Archivos de google font G-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script src="https://kit.fontawesome.com/5185a7a81a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!--3. Estilo archivo css-->
+    <link rel="stylesheet" href="/css/registro/registroMantenimientoDeUsuario.css">
+    <link rel="stylesheet" href="/css/general.css">
+
+    <title>Admin-Usuario | Tico-Cinemas</title>
+</head>
+
+<body>
+
+    <!--Header principal G-->
+    <header class="header-principal">
+        <div class="logo">
+            <a href="/html/index.html">
+                <img src="/img/logo2.jpeg" alt="">
+            </a>
+        </div>
+        <nav>
+            <button class="btn-general ">
+            <a href="/html/menus/menuDeAdmin.html "> Menu Admin</a>
+            </button>
+            <button class="btn-general ">
+                <a href="/html/index.html "> 
+                    <i class="fas fa-home"></i>
+                </a>
+            </button>
+        </nav>
+    </header>
+
+    <!--Section de central-->
+    <main>
+        <section id="contenedorRegistroUsuarios">
+            <div class="menuVertical">
+                <button class="tablinks" onclick="abrirMenu(event, 'agregar-pelicula')" id="defaultOpen">Registrar Usuario</button>
+                <button class="tablinks" onclick="abrirMenu(event, 'lista-peliculas')">Lista de usuarios</button>
+            </div>
+
+            <div id="agregar-pelicula" class="tabcontent">
+                <h2>Mantenimiento y lista de usuarios</h2>
+                <h3>Registrar Nuevo Usuario</h3>
+                <div class="row-registroUsuario">
+                    <div class="col-registroUsuario">
+                        <div class="container-registroUsuario">
+                            <form class="form-registroUsuario">
+                                <!--action="/action_page.php"-->
+                                <div class="col-infoGeneral-registroUsuario">
+                                    <div class="info-registroUsuario">
+                                        <div class="input-default">
+                                            <label for="primerNombre"> Primer nombre:</label>
+                                            <input type="text" class="div-nombreUsuario" id="txt-nombre" name="nombreUsuario" required>
+                                        </div>
+                                        <div class="input-default">
+                                            <label for="segundoNombre"> Segundo nombre:</label>
+                                            <input type="text" class="div-segundoNombre" id="txt-SegundoNombre" name="nombreUsuario">
+                                            <p class="notas">*Campo opcional</p>
+                                        </div>
+                                        <div class="input-default">
+                                            <label for="primerApellido"> Primer apellido:</label>
+                                            <input type="text" class="div-primerApellido" id="txt-apellido" name="nombreUsuario" required>
+                                        </div>
+                                        <div class="input-default">
+                                            <label for="segundoApellido"> Segundo apellido:</label>
+                                            <input type="text" class="div-segundoApellido" id="txt-SegundoApellido" name="nombreUsuario">
+                                            <p class="notas">*Campo opcional</p>
+                                        </div>
+
+                                        <div class="input-default">
+                                            <label for="descripcionPelicula"> Rol:</label>
+                                            <select id="rol" class="div-rol" required>
+                                                <option value="0">Seleccionar</option>
+                                                <option value="Usuario">Usuario</option>
+                                                <option value="Administrador de Soporte">Administrador de Soporte</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-default">
+                                            <label for="email">Correo electrónico:</label>
+                                            <input type="url" class="div-email" id="txt-correo" name="email" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-infoGeneral-registroUsuario">
+                                    <div class="info-registroUsuario">
+                                        <div class="input-default">
+                                            <label for="tipoID">Tipo de identificación:</label>
+                                            <select id="tipoIDSelector" class="div-tipoID" required>
+                                                <option value="0">Seleccionar</option>
+                                                <option value="Cédula Nacional">Cédula Nacional</option>
+                                                <option value="Pasaporte">Pasaporte</option>
+                                                <option value="Cédula Residencia">Cédula Residencia</option> 
+                                            </select>
+                                        </div>
+                                        <div class="input-default">
+                                            <label for="cine">Número de identificación:</label>
+                                            <input type="number" class="div-numeroID" id="userid" name="numeroID" min="0" required>
+                                        </div>
+                                        <div class="input-default">
+                                            <label for="fechaNacimiento">Fecha de nacimiento:</label>
+                                            <input type="date" class="div-fechaNacimiento" id="fechaNacimiento" name="fechaNacimiento" required>
+                                        </div>
+                                        <div class="input-default">
+                                            <label for="celular">Teléfono:</label>
+                                            <input type="tel" class="div-celular" id="txt-telefono" name="celular" required>
+                                        </div>
+                                        <div class="registrarUsuario">
+                                            <button type="button" class="btn-general" id="guardar-usuarios">
+                                            Registrar Usuario
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-infoGeneral-imagenUsuario">
+                                    <label for="">Subir perfil:</label>
+                                    <div class="info-registroUsuario">
+                                        <div class="imagen-usuario">
+                                            <img src="/img/perfil.jpg" alt="">
+                                            <input type="image" class="div-imagenUsuario" id="imagenUsuario" alt="">
+                                        </div>
+                                        <div class="subirImagen">
+                                            <button type="button" class="btn-general" id="guardar-imagen">
+                                        Subir imagen
+                                    </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div id="lista-peliculas" class="tabcontent">
+                <h2>Mantenimiento de cartelera</h2>
+                <h3>Lista de usuarios registrados</h3>
+                <form class="form-buscar">
+                    <div class="input-default">
+
+                        <label class="material-icons">
+                            search
+                        </label>
+                        <input type="text" placeholder="Buscar" id="txt-filtro">
+
+
+                    </div>
+
+                </form>
+                <div>
+
+                    <table class="tabla" id="tbl-usuarios">
+                        <!--Elemento para encabezado de la tabla-->
+                        <thead>
+                            <tr>
+                                <!--Table row-->
+                                <th>Primer nombre</th>
+                                <th>Segundo nombre</th>
+                                <th>Primer apellido</th>
+                                <th>Segundo apellido</th>
+                                <th>Teléfono</th>
+                                <th>Correo electrónico</th>
+                                <th>Tipo de identificación</th>
+                                <th>Número de identificación</th>
+                                <th>Fecha de nacimiento</th>
+                                <th>Rol</th>
+                                <th><i class="fas fa-wrench"></i></th>
+                                <!--No se debería mostrar contraseña por seguridad-->
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--JavaScript-->
+
+
+    <!--Footer G-->
+    <footer>
+        <div class="container">
+            <!--Todo class debe llevar la sección a la que peretenece-->
+            <div class="row ">
+                <div class="columna ">
+                    <img src=" " class="logo-footer ">
+                    <h8>
+                        ¿Quiénes somos?
+                    </h8>
+                </div>
+                <div class="columna ">
+                    <h8>
+                        Redes Sociales
+                    </h8>
+                    <ul class="redes ">
+                        <li>
+                            <a href="# ">
+                                <i class="fab fa-facebook-square "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <i class="fab fa-linkedin "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <i class="fab fa-instagram "></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="columna ">
+                    <h8>
+                        Contáctenos
+                    </h8>
+                    <ul class="contactos ">
+                        <li>
+                            <a href="https://api.whatsapp.com/send/?phone=50683077557&text=Hola+Tico-Cinemas te saluda+&app_absent=0 ">
+                                <i class="fab fa-whatsapp "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <i class="far fa-envelope "></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="barra-footer ">
+            &copy; Derechos Reservados - 2021
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/servicios-general.js"></script>
+    <script src="/js/registro/reigstroMantenimientoDeUsuario.js"></script>
+
+</body>
+
+</html>

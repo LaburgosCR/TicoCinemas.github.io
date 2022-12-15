@@ -1,0 +1,107 @@
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background-color: #082032;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Bowlby One SC', cursive;
+    margin-bottom: 20px;
+    color: white;
+    -webkit-text-stroke: 2px #082032;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    padding: 0 15%;
+}
+
+.input-default input {
+    border: 0;
+    color: gray;
+    outline: none;
+}
+
+.input-default input:focus {
+    background-color: #FFEBCD;
+    border: 2px solid #CB8B07;
+    color: black
+}
+
+.bloque1 {
+    width: 50%;
+    padding-top: 19px;
+    background-color: gray;
+    border: solid 1px #082032;
+}
+
+.bloque1 h2 {
+    font-size: x-large;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 60%;
+}
+
+input[type="password"] {
+    width: 60%;
+}
+
+.bloque1 form .form-block {
+    margin: 20px;
+    text-align: center;
+}
+
+.bloque1 form .form-block a {
+    display: flex;
+    justify-content: center;
+}
+
+.bloque1 form .btn-form-pago {
+    display: flex;
+    justify-content: center;
+}
+
+.bloque2 {
+    width: 50%;
+    padding: 0 1%;
+    background-color: gray;
+    border: solid 1px #082032;
+}
+
+.bloque2 .user-image {
+    display: flex;
+}
+
+.bloque2 .user-image img {
+    max-width: 90%;
+    min-height: 150px;
+    margin: 10px;
+    display: flex;
+    border: 4px solid white;
+}
+
+.bloque2 .btn-img-guardar {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.bloque2 .form-block {
+    margin: 10px;
+    padding-bottom: 20px;
+}
+
+.btn-form-guardar {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}

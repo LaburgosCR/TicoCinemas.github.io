@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 1.Archivo de reset -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!--2. Archivos de google font G-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script src="https://kit.fontawesome.com/5185a7a81a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!--3. Estilo archivo css-->
+    <link rel="stylesheet" href="/css/mantenimiento/mantenimientoCartelera.css">
+    <link rel="stylesheet" href="/css/general.css">
+
+    <title>Cartelera | Tico-Cinemas</title>
+</head>
+
+<body>
+
+    <!--Header principal G-->
+    <header class="header-principal">
+        <div class="logo">
+            <a href="/html/index.html">
+
+                <img src="/img/logo2.jpeg" alt="">
+            </a>
+        </div>
+        <nav>
+            <button class="btn-general ">
+            <a href="/html/menus/menuDeAdmin.html "> Menu Admin</a>
+            </button>
+            <button class="btn-general ">
+                <a href="/html/index.html "> 
+                    <i class="fas fa-home"></i>
+                </a>
+            </button>
+        </nav>
+    </header>
+
+    <!--Section de central-->
+    <main>
+        <section id="contenedorCartelera">
+            <div class="menuVertical">
+                <button class="tablinks" onclick="abrirMenu(event, 'agregar-pelicula')" id="defaultOpen">Agregar películas</button>
+                <button class="tablinks" onclick="abrirMenu(event, 'lista-peliculas')">Lista de películas</button>
+                <button class="tablinks" onclick="abrirMenu(event, 'agregar-sala')">Agregar salas</button>
+                <button class="tablinks" onclick="abrirMenu(event, 'lista-salas-peliculas')">Lista de salas por películas</button>
+            </div>
+
+            <div id="agregar-pelicula" class="tabcontent">
+                <h2>Mantenimiento de cartelera</h2>
+                <h3>Agregar películas</h3>
+                <div class="row-registroPeliculas">
+                    <div class="col-registroPeliculas">
+                        <div class="container-registroPeliculas">
+                            <form class="form-registroPeliculas">
+                                <!--action="/action_page.php"-->
+                                <div class="col-infoGeneral-registroPeliculas">
+                                    <div class="info-registroPeliculas">
+                                        <div class="input-default">
+                                            <label for="nombrePelicula"> Nombre de la película:</label>
+                                            <input type="text" class="div-nombrePelicula" id="txt-nombrePelicula" name="nombrePelicula" required>
+                                        </div>
+                                        <div class="input-default">
+                                            <label for="descripcionPelicula"> Descripción:</label>
+                                            <textarea class="div-descripcionPelicula" id="txt-descripcionPelicula" required></textarea>
+                                        </div>
+                                        <div class="input-default">
+                                            <label for="duracionPelicula">Duración:</label>
+                                            <input type="time" class="div-duracionPelicula" id="time-duracionPelicula" name="time-duracionPelicula" hrs required>
+                                        </div>
+                                        <div class="input-default">
+                                            <p class="notas"> *Ver códigos en mantenimiento de cadenas de cine </p>
+                                            <label for="cine"> Nombre de cadena de cine:</label>
+                                            <select class="div-cinePelicula" id="slt-nombreCadenaPelicula" required>
+                                                <option value="0">Seleccionar</option>
+                                            </select>
+
+                                            <label for=""> Lugar de cadena de cine: </label>
+                                            <select class="div-cinePelicula" id="slt-lugarCadenaPelicula" required>
+                                                <option value="0">Seleccionar</option>
+                                            
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-infoGeneral-registroPeliculas">
+                                    <div class="info-registroPeliculas">
+                                        <div class="input-default">
+                                            <label for="categoria">Categoría:</label>
+                                            <select class="div-categoriaPelicula" placeholder="" id="slt-categoriaPelicula" required>
+                                                <option value="0">Seleccionar</option>
+                                          
+                                            </select>
+                                        </div>
+                                        <div class="input-default">
+                                            <label for="inicioProyecciones">Fecha de inicio de proyecciones:</label>
+                                            <input type="date" class="div-inicioProyecciones" id="txt-fechaInicioPelicula" name="fechaInicioPelicula" required>
+                                        </div>
+                                        <div class="input-default">
+                                            <label for="finProyecciones">Fecha de finalización de proyecciones:</label>
+                                            <input type="date" class="div-finProyecciones" id="txt-fechaFinalPelicula" name="fechaFinPelicula" required>
+                                        </div>
+                                        <div class="input-default">
+                                            <label for="calificacion">Clasificación:</label>
+                                            <select class="div-calificacionPelicula" id="slt-clasificacionPelicula" required>
+                                                <option value="0">Seleccionar</option>
+                                                <option value="G">G</option>
+                                                <option value="PG">PG</option>
+                                                <option value="PG-13">PG-13</option>
+                                                <option value="R">R</option> 
+                                                <option value="NC-17">NC-17</option> 
+                                            </select>
+                                        </div>
+                                        <div class="input-default ">
+                                            <label for="trailerPelicula">Subir trailer:</label>
+                                            <input type="url" class="div-trailerPelicula" id="trailerPelicula" name="trailerPelicula">
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn-general" id="btn-registrarPelicula">Guardar película</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-infoGeneral-registroPeliculas ">
+                                    <label for="">Imagen de película:</label>
+                                    <div>
+                                        <img id="imagenPelicula">
+                                        <div>
+                                            <button type="button" class="btn-general" id="btn-imagenPelicula">Subir</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="lista-peliculas" class="tabcontent">
+                <h2>Mantenimiento de cartelera</h2>
+                <h3>Lista de películas registradas</h3>
+                <form class="form-buscar">
+                    <div class="input-default">
+                        <span class="material-icons">
+                            search
+                        </span>
+                        <input type="text" placeholder="Buscar" id="txt-filtro">
+
+                    </div>
+                </form>
+                <div>
+                    <table class="tabla" id="tbl-peliculas">
+                        <!--Elemento para encabezado de la tabla-->
+                        <thead>
+                            <tr>
+                                <!--Table row-->
+                                <!--<th>Código Película</th>--->
+                                <th>Nombre de Película</th>
+                                <th>Descripción</th>
+                                <th>Duración</th>
+                                <th>Cadena de Cine</th>
+                                <th>Lugar</th>
+                                <th>Categoría</th>
+                                <th>Fecha inicio proyecciones</th>
+                                <th>Fecha finalización proyecciones</th>
+                                <th>Calificación</th>
+                                <th>Imagen</th>
+                                <th></th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="agregar-sala" class="tabcontent">
+                <h2>Mantenimiento de cartelera</h2>
+                <h3>Agregar salas</h3>
+                <p>Registre las opciones de sala disponibles para la película en registro:</p>
+                <div class="row-registroPeliculas">
+                    <div class="col-registroPeliculas">
+                        <div class="container-registroPeliculas">
+                            <form class="form-registroPeliculas">
+                                <!--action="/action_page.php"-->
+                                <div class="col-infoGeneral-registroPeliculas">
+                                    <div class="info-registroPeliculas">
+                                        <div class="input-default">
+
+                                            <div class="input-default">
+                                                <label for="seleccionPelicula">Nombre de la película</label>
+                                                <select class="div-nombrePeliculaSala" id="slt-nombrePeliculaSalaCartelera" placeholder="">
+                                                   <option value="0">Seleccionar</option>
+                                             
+                                                </select>
+                                            </div>
+
+                                            <div class="input-default">
+                                                <label for="seleccionCadenaSala">Cadena de cine a proyectar</label>
+                                                <select class="div-cadenaSalaCartelera" id="slt-CadenaSalaCartelera" placeholder="">
+                                                   <option value="0">Seleccionar</option>
+                                             
+                                                </select>
+                                            </div>
+
+
+                                            <div class="input-default">
+                                                <label for="seleccionLugarSala">Lugar</label>
+                                                <select class="div-lugarSalaCartelera" id="slt-lugarSalaCartelera" placeholder="">
+                                                   <option value="0">Seleccionar</option>
+                                                                                             </select>
+                                            </div>
+
+                                        </div>
+                                        <div class="input-default">
+                                            <label for="seleccionHorario">Seleccione horario:</label>
+                                            <input type="time" class="div-seleccionHorario" id="txt-HorarioSala" name="seleccionHorario">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-infoGeneral-registroPeliculas">
+                                    <div class="info-registroPeliculas">
+                                        <div class="input-default">
+                                            <label for="idiomaPelicula">Idioma del audio de la película:</label>
+                                            <select id="slt-idiomaPelicula" class="div-idiomaPelicula" placeholder="">
+                                                <option value="0">Seleccionar</option>
+                                               
+                                            </select>
+                                        </div>
+                                        <div class="input-default">
+                                            <label for="idiomaSubtitulo">Idioma de los subtítulos:</label>
+                                            <select class="div-idiomaSubtitulo" id="slt-idiomaSubtitulo" placeholder="">
+                                               <option value="0">Seleccionar</option>
+                                         
+                                            </select>
+                                        </div>
+                                        <div class="input-default">
+                                            <label for="tipoSala">Tipo de sala</label>
+                                            <select id="slt-tipoSala" class="div-tipoSala" placeholder="">
+                                                <option value="0">Seleccionar</option>
+                                                
+                                            </select>
+                                        </div>
+                                        <div class="btn-guardarSala"><button type="button" class="btn-general" id="btn-registrar-salaCartelera">  Guardar sala</button></div>
+
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="lista-salas-peliculas" class="tabcontent">
+                <h2>Mantenimiento de cartelera</h2>
+                <h3>Lista de salas por películas</h3>
+                <form class="form-buscar">
+                    <div class="input-default">
+                        <span class="material-icons">
+                            search
+                        </span>
+                        <input type="text" placeholder="Buscar" id="txt-buscar-sala">
+                    </div>
+                </form>
+                <div>
+                    <table class="tabla" id="tbl-salasPeliculas">
+                        <!--Elemento para encabezado de la tabla-->
+                        <thead>
+                            <tr>
+                                <!--Table row
+                                <th>Código Película</th> -->
+                                <th>Nombre de Película</th>
+                                <th>Cadena de cine</th>
+                                <th>Lugar</th>
+                                <th>Horario</th>
+                                <th>No. de Sala</th>
+                                <th>Idioma de Audio</th>
+                                <th>Subtítulos</th>
+                                <th>Tipo de Sala</th>
+                                <th>Foto</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!--JavaScript-->
+    <!--Footer G-->
+    <footer>
+        <div class="container ">
+            <!--Todo class debe llevar la sección a la que peretenece-->
+            <div class="row ">
+                <div class="columna ">
+                    <img src=" " class="logo-footer ">
+                    <h8>
+                        ¿Quiénes somos?
+                    </h8>
+                </div>
+                <div class="columna ">
+                    <h8>
+                        Redes Sociales
+                    </h8>
+                    <ul class="redes ">
+                        <li>
+                            <a href="# ">
+                                <i class="fab fa-facebook-square "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <i class="fab fa-linkedin "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <i class="fab fa-instagram "></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="columna ">
+                    <h8>
+                        Contáctenos
+                    </h8>
+                    <ul class="contactos ">
+                        <li>
+                            <a href="https://api.whatsapp.com/send/?phone=50683077557&text=Hola+Tico-Cinemas te saluda+&app_absent=0 ">
+                                <i class="fab fa-whatsapp "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <i class="far fa-envelope "></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="barra-footer ">
+            &copy; Derechos Reservados - 2021
+        </div>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/js/servicios-general.js"></script>
+<script src="/js/mantenimiento/mantenimientoCartelera.js "></script>
+<script src="/js/mantenimiento/matenimentoSalasCartelera.js"></script>
+<script src="/js/servicios-imagenPelicula.js"></script>
+
+</html>

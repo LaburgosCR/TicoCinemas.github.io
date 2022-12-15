@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- 1.Archivo de reset -->
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <!--2. Archivos de google font G-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <script src="https://kit.fontawesome.com/5185a7a81a.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Secular+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+        <!--estilo archivo css-->
+
+        <link rel="stylesheet" href="/css/general.css">
+        <link rel="stylesheet" href="/css/registro/perfilDeUsuario.css">
+        <title>Perfil | Tico-Cinemas</title>
+    </head>
+</head>
+
+<body>
+
+    <!--Header principal G-->
+    <header class="header-principal">
+        <div class="logo">
+            <a href="/html/index.html">
+                <img src="/img/logo2.jpeg" alt="">
+            </a>
+        </div>
+        <nav>
+            <button class="btn-general ">
+            <a href="/html/menus/menuCartelera.html "> Cartelera</a>
+            </button>
+            <button class="btn-general ">
+                <a href="/html/registro/perfilDeUsuario.html">Perfil</a>
+            </button>
+            <button class="btn-general ">
+                <a href="/html/compras/carritoDeCompras.html "> 
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            <button class="btn-general ">
+                <a href="/html/index.html "> 
+                    <i class="fas fa-home"></i>
+                </a>
+            </button>
+        </nav>
+    </header>
+    <section class="formulario">
+
+        <div class="bloque1">
+
+            <form action="">
+
+                <div class="input-default">
+                    <h2>Datos de Usuario</h2>
+                    <label for="primerNombre"> Primer nombre:</label>
+                    <input type="text" name="primer-nombre" placeholder="" id="txt-nombre" class="div-nombre" required>
+                </div>
+                <div class="input-default">
+                    <label for="segundoNombre"> Segundo nombre:</label>
+                    <input type="text" name="segundo-nombre" class="form-control" placeholder="" id="txt-SegundoNombre" required>
+                    <p class="notas">*Campo opcional</p>
+                </div>
+
+                <div class="input-default">
+
+                    <label for="primerApellido"> Primer apellido:</label>
+                    <input type="text" name="primer-apellido" class="div-apellido" placeholder="" id="txt-apellido" required>
+                </div>
+                <div class="input-default">
+                    <label for="segundoApellido"> Segundo apellido:</label>
+                    <input type="text" name="segundo-apellido" class="form-control" placeholder="" id="txt-SegundoApellido" required>
+                    <p class="notas">*Campo opcional</p>
+                </div>
+                <div class="input-default">
+                    <label for="telefono"> Teléfono:</label>
+                    <input type="text" name="telefono" class="div-telefono" placeholder="" id="txt-telefono" required>
+                </div>
+
+                <div class="input-default">
+                    <label for="correo"> Correo electrónico:</label>
+                    <input type="text" name="correo" class="div-correo" placeholder="" id="txt-correo" required disabled>
+                </div>
+
+                <div class="input-default">
+                    <label for="contrasenna"> Contraseña:</label>
+                    <input type="password" name="password" class="div-password" placeholder="" id="txt-password" required>
+                </div>
+
+                <div class="input-default">
+                    <label for="contrasenna"> Confirme contraseña:</label>
+                    <input type="password" name="password" class="div-confirmPassword" placeholder="" id="txt-confirmPassword" required>
+                </div>
+                <div class="input-default">
+                    <label for="descripcionPelicula"> Rol:</label>
+                    <select id="rol" class="div-rol" required disabled>
+                        <option value="0">Seleccionar</option>
+                        <option value="Usuario">Usuario</option>
+                        <option value="Administrador de Soporte">Administrador de Soporte</option>
+                    </select>
+                </div>
+                <div class="btn-form-pago">
+                    <button type="button" class="btn-general" id="txt-form-pago">
+                        <a href="../registro/registroMetodoPago.html">Agregar formas de pago</a>  
+                    </button>
+                </div>
+            </form>
+
+        </div>
+        <div class="bloque2">
+            <div class="user-image">
+                <div class="img-perfil">
+                    <label for="imagenes"> Seleccionar perfil:</label>
+                    <img src="/img/perfil.jpg" alt="">
+                    <div class="btn-img-guardar">
+                        <button type="button" class="btn-general" id="txt-img-guardar">
+                            <a href="">Subir Imagen</a> 
+                        </button>
+                    </div>
+                </div>
+                <div class="img-perfil">
+                    <label for="imagenes"> Seleccionar avatar:</label>
+                    <img src="/img/jedi.jpg" alt="">
+                    <div class="btn-img-guardar">
+                        <button type="button" class="btn-general" id="txt-avatar-guardar">
+                            <a href="">Subir Avatar</a> 
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-block">
+                <div class="input-default">
+                    <label for="imagenes"> Seleccione identificación:</label>
+                    <select class="div-tipoid" id="tipoIDSelector" required>
+                    <option value="0">Seleccionar</option>
+                    <option value="Cédula Nacional">Cédula Nacional</option>
+                    <option value="Pasaporte">Pasaporte</option>
+                    <option value="Cédula de Residencia">Cédula de Residencia</option> 
+                </select>
+                </div>
+                <div class="input-default">
+                    <label for="id"> No. de identificación:</label>
+                    <input type="number" id="userid" class="div-userid" placeholder="" min="0" required>
+                </div>
+            </div>
+
+            <div class="form-block">
+                <div class="input-default">
+                    <label for="start">Fecha de Nacimiento:</label>
+                    <input type="date" id="fechaNacimiento" class="div-date" required>
+                </div>
+            </div>
+            <div class="btn-form-guardar">
+                <button type="button" class="btn-general" id="txt-modificar">
+                    <a href="">Modificar perfil</a> 
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer G-->
+    <footer>
+        <div class="container">
+            <!--Todo class debe llevar la sección a la que peretenece-->
+            <div class="row">
+                <div class="columna">
+                    <img src=" " class="logo-footer ">
+                    <h3>
+                        ¿Quiénes somos?
+                    </h3>
+                </div>
+                <div class="columna">
+                    <h3>
+                        Redes Sociales
+                    </h3>
+                    <ul class="redes">
+                        <li>
+                            <a href="# ">
+                                <i class="fab fa-facebook-square "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <i class="fab fa-linkedin "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <i class="fab fa-instagram "></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="columna ">
+                    <h3>
+                        Contáctenos
+                    </h3>
+                    <ul class="contactos">
+                        <li>
+                            <a href="https://api.whatsapp.com/send/?phone=50683077557&text=Hola+Tico-Cinemas te saluda+&app_absent=0 ">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <i class="far fa-envelope"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="barra-footer ">
+            &copy; Derechos Reservados - 2021
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/servicios-general.js"></script>
+    <script src="/js/registro/perfilDeUsuario.js"></script>
+
+</body>
+
+</html>

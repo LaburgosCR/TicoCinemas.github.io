@@ -1,0 +1,77 @@
+    * {
+        font-family: 'Secular One', sans-serif;
+    }
+    
+    .quienesgeneral {
+        padding: 0 3%;
+        background-color: #ccc;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+    .fila1 {
+        margin-top: 10px;
+    }
+    
+    h1 {
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Bowlby One SC', cursive;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: white;
+        text-align: center;
+        -webkit-text-stroke: 2px #082032;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+    .fila1 p {
+        padding-top: 20px;
+    }
+    
+    .fila2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+          
+    }
+    .fila2 .located {
+      margin-left: 50px;
+    }
+
+   
+    h3{
+        margin-bottom: 15px;
+    }
+    .fila3{
+        display: flex;
+        justify-content: center;
+    }
+    .fila3 .consultas{
+      
+        align-items: center;
+        width: 40%;
+        padding: 20px;
+        
+    }
+    .fila3 .mensaje{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+    
+    }
+
+    .consultas input{
+        width: 90%;
+        margin: 10px;
+    }
+
+    .fila3 .consultas .btn-form-enviar{
+        display: flex;
+        justify-content: center;  
+        align-items: center;
+       
+    }

@@ -1,0 +1,168 @@
+  * {
+      font-family: 'Secular One';
+  }
+  
+  .col-25 {
+      -ms-flex: 25%;
+      /* IE10 */
+      flex: 25%;
+  }
+  
+  .col-25 {
+      padding: 0 16px;
+      background-color: #ccc;
+      margin-left: 100px;
+      margin-right: 100px;
+      border: solid #08304E 3px;
+  }
+  
+  h3 {
+      font-size: 30px;
+      margin-left: 10px;
+      margin-top: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #08304E;
+  }
+  
+  .container-carritoPago thead {
+      font-size: 20px;
+  }
+  
+  .container-carritoPago h4 {
+      font-size: 25px;
+      padding-bottom: 20px;
+      padding-top: 30px;
+      color: #08304E
+  }
+  
+  .precio {
+      float: right;
+      color: #334756;
+      font-size: 20px;
+  }
+  
+  .precio-total {
+      float: right;
+      color: #08304E;
+  }
+  
+  .infoGeneral-entrada {
+      display: flex;
+      border: 2px solid #08304E;
+      padding: 15px;
+      justify-content: center;
+      margin-left: 50px;
+      margin-right: 50px;
+  }
+  
+  .informacionDeCompra .btn-general {
+      float: right;
+      margin-top: 25px;
+      width: 150px;
+  }
+  
+  .container .btn-comprar {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+  }
+  
+  span.icon-carrito {
+      float: right;
+  }
+  
+  .informacionDeCompra {
+      margin-left: 60px;
+      margin-right: 60px;
+  }
+  
+  .texto-entrada {
+      font-size: 20px;
+  }
+  
+  p {
+      margin: 5px;
+  }
+  
+  .total {
+      font-size: 25px;
+      padding-bottom: 50px;
+      color: #08304E;
+  }
+  
+  .seleccionar-metodoPago {
+      border: 2px solid #08304E;
+      padding: 1%;
+      margin-left: 50px;
+      margin-right: 50px;
+  }
+  
+  .seleccionar-metodoPago .agregarbtn {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+  }
+  
+  .seleccionar-metodoPago .tablaTarjetas {
+      display: flex;
+      justify-content: center;
+  }
+  
+  input[type='checkbox'] {
+      width: 15px;
+      height: 20px;
+      background: white;
+      border-radius: 50%;
+      border: 2px solid #555;
+  }
+  /*Formato de botónes de compras*/
+  
+  .terminosyCondiciones {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+  }
+  /* Formato tabla información de película*/
+  
+  th {
+      padding: 5px;
+      border: 1px solid gray;
+      background-color: #F0A500;
+  }
+  
+  td {
+      font-size: 20px;
+      vertical-align: middle;
+  }
+  
+  tr {
+      background-color: #ccc
+  }
+  
+  td {
+      padding: 5px;
+      border: 1px solid gray;
+      text-align: center;
+  }
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+  
+  @media (max-width: 800px) {
+      .col-25 {
+          margin-bottom: 20px;
+      }
+  }
+
+  .table td:last-child{
+      column-width: 120px;
+      display: flex;
+      justify-content: center;
+  }
+
+  .table button{
+      background-color: rgb(20,36,80);
+      color:white;
+      margin: 5px;
+
+  }

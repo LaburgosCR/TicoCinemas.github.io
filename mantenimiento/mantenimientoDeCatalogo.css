@@ -1,0 +1,256 @@
+* {
+    font-family: 'Secular One', sans-serif;
+}
+
+#contenedorCatalago {
+    height: 800px;
+    margin-left: 50px;
+}
+
+#contenedorCatalago .menuVertical {
+    float: left;
+    border: 3px solid #08304e;
+    background-color: gray;
+    width: 10%;
+    height: 790px;
+}
+
+.menuVertical button {
+    display: block;
+    background-color: inherit;
+    color: white;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/*Cuando se pasa el botón encima*/
+
+.menuVertical button:hover {
+    background-color: #08304e;
+    border: 2px solid white;
+}
+
+
+/*Cuando el menu es seleccionado*/
+
+.menuVertical button.active {
+    background-color: #08304e;
+    border: 2px solid white;
+    text-decoration: 2px underline #F0A500;
+    ;
+}
+
+
+/*sección del menu elegido*/
+
+#contenedorCatalago .tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 3px solid #08304e;
+    background-color: #ccc;
+    width: 85%;
+    border-left: none;
+    height: 790px;
+}
+
+
+/*Titulos */
+
+h2 {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #082032;
+}
+
+h3 {
+    font-size: 25px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+
+/*Contenido del tab*/
+
+#Idiomas p {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#Subtítulos p {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#Categorias p {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#Salas p {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#Asientos p {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#Condiciones p {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+/*solicitud de datos*/
+
+.input-default {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.input-default input {
+    width: 20%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 20px;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+.input-error {
+    border-bottom: 2px solid red;
+}
+
+
+/*boton*/
+
+.btn-general-menu {
+    background: #F0A500;
+    border: 2px solid #334756;
+    color: white;
+    cursor: pointer;
+    padding: 0.1px;
+    border-radius: 5px;
+    width: 10%;
+    justify-content: space-between;
+}
+
+.btn-general-menu a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.btn-general-menu:hover {
+    background-color: #08304e;
+    border: 2px solid white;
+}
+
+
+/*formato de tablas*/
+
+.tableContainer {
+    margin-left: 10px;
+}
+
+.Table th {
+    border: 1px solid#8a8a8a;
+    background-color: #F0A500;
+}
+
+.Table th,
+td {
+    border: 1px solid #8a8a8a;
+    padding: 5px;
+}
+
+.Table tr:nth-child(even) {
+    background-color: rgb(177, 174, 174);
+}
+
+.Table td {
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    align: center;
+}
+
+
+/*textarea para las condiciones*/
+
+.terminosycondiciones {
+    display: flex;
+    justify-content: center;
+}
+
+.bloque1 {
+    width: 100%;
+    margin-left: 15x;
+}
+
+.bloque2 {
+    width: 80%;
+    margin-right: 40px;
+}
+
+.bloque1 .input-condiciones {
+    display: flex;
+    flex-direction: row;
+}
+
+textarea {
+    margin-bottom: 15px;
+    display: block;
+    height: 100px;
+    font-size: 16px;
+    border: 1px solid grey;
+    width: 80%;
+    padding: 5px 10px;
+}
+
+.btn-general-condiciones {
+    background: #F0A500;
+    border: 2px solid #334756;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    width: 15%;
+    margin-left: 20px;
+}
+
+.input-error {
+    /*border-bottom: 2px solid #ef5777;*/
+    border: 2px solid #ff0000 !important;
+}
+
+.Table td:last-child {
+    column-width: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.Table td {
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Table button {
+    background-color: rgb(20, 36, 80);
+    color: white;
+    margin: 5px;
+    padding: none;
+}

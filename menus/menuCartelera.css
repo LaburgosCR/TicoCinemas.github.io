@@ -1,0 +1,157 @@
+* {
+    font-family: 'Secular One', sans-serif;
+}
+
+#opcionesPeliculas {
+    background-color: #ccc;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: solid #08304e 2px;
+    height: 900px;
+    display: flex;
+}
+
+h2 {
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Bowlby One SC', cursive;
+    margin-top: 15px;
+    color: white;
+    text-align: center;
+    -webkit-text-stroke: 2px #082032;
+}
+
+#opcionesPeliculas .menuVertical {
+    border-left: 2px solid #08304e;
+    background-color: gray;
+    height: 900px;
+    width: 10%;
+}
+
+#opcionesPeliculas .areaPeliculas {
+    padding: 5px;
+    width: 90%;
+    height: 900px;
+}
+
+
+/*Session de Menu*/
+
+.menuVertical p {
+    display: block;
+    background-color: inherit;
+    text-decoration: underline;
+    color: #F0A500;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.menuVertical button {
+    display: block;
+    background-color: inherit;
+    color: white;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/*Cuando se pasa el botón encima*/
+
+.menuVertical button:hover {
+    background-color: #08304e;
+    border: 2px solid white;
+}
+
+
+/*Cuando el menu es seleccionado*/
+
+.menuVertical button.active {
+    background-color: #08304e;
+    border: 2px solid white;
+    text-decoration: 2px underline #F0A500;
+    ;
+}
+
+.barraBuscar {
+    display: flex;
+    
+    align-items: center;
+
+    
+}
+
+
+.areaPeliculas .buscadorCartelera {
+   
+}
+
+.areaPeliculas p {
+    margin-top: 5px;
+}
+
+
+
+.barraBuscar .div-seleccion {
+    width: 200px;
+    margin:20px;
+}
+
+.areaPeliculas .buscador .buscaPelicula {
+    width: 300px;
+}
+
+.areaPeliculas .buscador input {
+    width: 20%;
+}
+
+.barraBuscar select {
+    width: 20%;
+}
+
+.areaPeliculas .carteleraPeliculas {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carteleraPeliculas .Peliculas {
+    border: 2px solid gray;
+    border-radius: 5%;
+    background-color: #092438;
+    /*rgba(0, 0, 0, .7);*/
+    width: 150px;
+    height: 300px;
+    padding: 10px 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.areaPeliculas .mostrarOpciones {
+    padding: 5px;
+    text-align: center;
+    text-decoration: underline;
+    color: #08304e;
+}
+
+.carteleraPeliculas .Peliculas img {
+    border: solid white 1px;
+    width: 180px;
+    height: 230px;
+    margin-left: 2px;
+}
+
+.carteleraPeliculas .Peliculas p {
+    padding: 5px;
+    color: white;
+}
+
+.carteleraPeliculas .Peliculas .btn-general {
+    width: 60px;
+}

@@ -1,0 +1,125 @@
+/*General de la pagina */
+
+body {
+    background-color: #082032;
+    font-family: 'Secular One', sans-serif;
+}
+
+
+/*General Header */
+
+.logo img {
+    width: 250px;
+    margin-left: 50px;
+}
+
+.header-principal {
+    background: #F0A500;
+    min-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-principal nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 80%;
+    padding: 5px;
+}
+
+.header-principal nav i {
+    font-size: 29px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-principal a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/*boton General */
+
+.btn-general {
+    background: #F0A500;
+    border: 2px solid #334756;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    width: 20%;
+    margin: 5px;
+}
+
+.btn-general:hover {
+    background-color: #08304e;
+    border: 2px solid white;
+}
+
+.btn-general a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+
+/*Footer General*/
+
+footer {
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    /*position: fixed;*/
+    width: 100%;
+    bottom: 0;
+}
+
+footer .barra-footer {
+    background-color: grey;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer .logo-footer {
+    width: 100%;
+}
+
+footer a {
+    color: white;
+}
+
+footer .redes {
+    font-size: 30px;
+    display: flex;
+}
+
+footer .redes a {
+    margin: 0 7.5px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3%;
+}
+
+.columna {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.columna .contactos {
+    font-size: 25px;
+    display: flex;
+}
+
+.columna .contactos a {
+    margin: 0 7.5px;
+}

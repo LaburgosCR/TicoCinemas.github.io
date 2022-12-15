@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 1.Archivo de reset -->
+    <link rel="stylesheet" href="/css/reset.css">
+
+    <!--2. Archivos de google font G-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script src="https://kit.fontawesome.com/5185a7a81a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Secular+One&display=swap" rel="stylesheet">
+
+    <!--estilo archivo css-->
+    <link rel="stylesheet" href="/css/compras/carritoDeCompras.css">
+    <link rel="stylesheet" href="/css/general.css">
+    <title>Carrito | Tico-Cinemas</title>
+</head>
+
+<body>
+
+    <!--Header principal G-->
+    <header class="header-principal">
+        <div class="logo">
+            <a href="/html/index.html">
+                <img src="/img/logo2.jpeg" alt="">
+            </a>
+        </div>
+        <nav>
+            <button class="btn-general ">
+            <a href="/html/menus/menuCartelera.html "> Cartelera</a>
+            </button>
+            <button class="btn-general ">
+                <a href="/html/registro/perfilDeUsuario.html">Perfil</a>
+            </button>
+            <button class="btn-general ">
+                <a href="/html/index.html "> 
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            <button class="btn-general ">
+                <a href="/html/index.html "> 
+                    <i class="fas fa-home"></i>
+                </a>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <div class="container-carritoPago">
+            <div class=" col-25 ">
+                <div class="container ">
+                    <h3>Carrito de Compras</h3>
+                    <div class="infoGeneral-entrada">
+                        <table >
+                            <thead>
+                                <th>Nombre de la película</th>
+                                <th>Duración</th>
+                                <th>Fecha de emisión</th>
+                                <th>Cine</th>
+                                <th>Sala</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Eternals</td>
+                                    <td>2h 30m</td>
+                                    <td>22 de noviembre del 2021</td>
+                                    <td>Cinepolis Terrmal</td>
+                                    <td>Sala 1 IMAX</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div> <img src="/img/eternals.jpg" style="height: 200px;" alt=""></div>
+                    </div>
+                    <div class="informacionDeCompra">
+                        <button class="btn-general">
+                            <a href="/html/compras/comprarPelicula.html"> Editar compra</a>
+                        </button>
+                        <h4>Entradas totales
+                            <span class="icon-carrito">
+                            <i class="fa fa-shopping-cart "></i>
+                            <b>3</b>
+                          </span>
+                        </h4>
+                        <p><a class="texto-entrada" href="#entradaAdulto">Entrada 1 Adulto</a> <span class="precio">₡5,000.00</span> </p>
+
+                        <p><a class="texto-entrada" href="#entradaNinno">Entrada 1 Niño</a> <span class="precio">₡0000.00</span></p>
+
+                        <p><a class="texto-entrada" href="#entradaAdultoMayor">Entrada 1 Adulto Mayor</a> <span class="precio">₡0000.00</span></p>
+                        <hr>
+                        <p class="total">Total <span class="precio precio-total"><b>₡5,000.00</b></span></p>
+                    </div>
+
+                    <div class="seleccionar-metodoPago">
+                        <div class="agregarbtn">
+                            <button type="button" class="btn-general" id="añadir-carro">               
+                            <a href="/html/registro/registroMetodoPago.html"> Añadir tarjeta</a>
+                            </button>
+                        </div>
+                        <div class="tablaTarjetas">
+                            <table class="table" id="tbl-pago">
+                                <thead>
+                                    <th>Pago con</th>
+                                    <th>Nombre en la tarjeta</th>
+                                    <th>Número de tarjeta</th>
+                                    <th>Fecha de expiración</th>
+                                    <th>Tipo de tarjeta</th>
+                                    <th>Eliminar</th>
+
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="terminosyCondiciones">
+                        <input type="checkbox">
+                        <p>Acepto que he leído y estoy de acuerdo con los terminos y condiciones de compra</p>
+
+                    </div>
+                    <div class=btn-comprar>
+                        <button class="btn-general">Comprar entradas</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/servicios-general.js"></script>
+    <script src="/js/registro/registroMetodoPago.js"></script>
+    <script src="/js/compras/carritoDeCompras.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+    <!--Footer G-->
+    <footer>
+        <div class="container ">
+            <!--Todo class debe llevar la sección a la que peretenece-->
+            <div class="row ">
+                <div class="columna ">
+                    <img src=" " class="logo-footer ">
+                    <h8>
+                        ¿Quiénes somos?
+                    </h8>
+                </div>
+                <div class="columna ">
+                    <h8>
+                        Redes Sociales
+                    </h8>
+                    <ul class="redes ">
+                        <li>
+                            <a href="# ">
+                                <i class="fab fa-facebook-square "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <i class="fab fa-linkedin "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <i class="fab fa-instagram "></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="columna ">
+                    <h8>
+                        Contáctenos
+                    </h8>
+                    <ul class="contactos ">
+                        <li>
+                            <a href="https://api.whatsapp.com/send/?phone=50683077557&text=Hola+Tico-Cinemas te saluda+&app_absent=0 ">
+                                <i class="fab fa-whatsapp "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <i class="far fa-envelope "></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="barra-footer ">
+            &copy; Derechos Reservados - 2021
+        </div>
+    </footer>
+</body>
+
+</html>

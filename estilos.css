@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-principal {
+    background: rgb(8, 8, 8);
+    min-height: 90px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+}
+
+.header-principal a {
+    color: rgb(69, 123, 204);
+    text-decoration: none;
+    font-size: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    width: 100px;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    gap: 20px;
+}
+
+.titulo {
+    font-size: 24px;
+    padding: 20px 0;
+}
+
+.contenedor-integrantes {
+    display: flex;
+    margin: auto;
+}
+
+.card {
+    border-radius: 10px;
+    min-height: 300px;
+    margin: 3px;
+    font-weight: bold;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card .textos {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.banner {
+    border-radius: 10px;
+    text-align: justify;
+    padding: 20px;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.barra {
+    font-size: 100px;
+    margin-top: 15px;
+}
+
+.banner h3 {
+    text-decoration: underline;
+    font-size: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.banner .valores {
+    width: 100%;
+}
+
+.banner .valores h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.valores ol {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20%
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+}
+
+.barra-footer {
+    background-color: grey;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer .logo-footer {
+    width: 7%;
+    border-radius: 10px;
+}
+
+footer p {
+    color: white;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 900px) {}
+
+@media screen and (max-width: 700px) {}
+
+@media screen and (max-width: 600px) {}

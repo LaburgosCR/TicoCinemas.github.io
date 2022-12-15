@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 1.Archivo de reset -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!--2. Archivos de google font G-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script src="https://kit.fontawesome.com/5185a7a81a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!--3. Estilo archivo css-->
+    <link rel="stylesheet" href="/css/mantenimiento/mantenimientoDeCatalogo.css">
+    <link rel="stylesheet" href="/css/general.css">
+
+    <title>Catálogos | Tico-Cinemas</title>
+</head>
+
+<body>
+
+    <!--Header principal G-->
+    <header class="header-principal">
+        <div class="logo">
+            <a href="/html/index.html">
+                <img src="/img/logo2.jpeg" alt="">
+            </a>
+        </div>
+        <nav>
+            <button class="btn-general ">
+            <a href="/html/menus/menuDeAdmin.html "> Menu Admin</a>
+            </button>
+            <button class="btn-general ">
+                <a href="/html/index.html "> 
+                    <i class="fas fa-home"></i>
+                </a>
+            </button>
+
+        </nav>
+    </header>
+
+    <!--Section de central-->
+
+    <div id="contenedorCatalago">
+        <div class="menuVertical">
+            <button class="tablinks" onclick="abrirMenu(event, 'Idiomas')" id="defaultOpen">Idiomas</button>
+            <button class="tablinks" onclick="abrirMenu(event, 'Subtítulos')">Subtítulos</button>
+            <button class="tablinks" onclick="abrirMenu(event, 'Categorias')">Categorías de películas</button>
+            <button class="tablinks" onclick="abrirMenu(event, 'Salas')">Tipo de salas</button>
+            <button class="tablinks" onclick="abrirMenu(event, 'Asientos')">Tipo de asientos</button>
+            <button class="tablinks" onclick="abrirMenu(event, 'Condiciones')">Términos y condiciones</button>
+        </div>
+        <!--Section tab de idiomas-->
+        <div id="Idiomas" class="tabcontent">
+            <h2>Mantenimiento de catálogos del sistema</h2>
+            <h3>Idiomas</h3>
+            <p>Registre las opciones de idioma:</p>
+            <div class="input-default div-idioma">
+                <span class="material-icons">language</span>
+                <input type="text" placeholder="Ingrese idiomas" id="txt-idiomas" required>
+                <button class="btn-general-menu" id="btn-registrar-idioma">
+                            Ingresar
+                    </button>
+            </div>
+            <form class="form-buscar">
+                <div class="input-default">
+                    <span class="material-icons">
+                        search
+                    </span>
+                    <input type="text" placeholder="Buscar" id="txt-buscar-idioma">
+
+                </div>
+            </form>
+            <p>Lista de idiomas en el sistema:</p>
+            <div class="tableContainer">
+                <table class="Table" id="tbl-idioma">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Idioma</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody class=cuerpoTabla>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="Subtítulos" class="tabcontent">
+            <h2>Mantenimiento de catálogos del sistema</h2>
+            <h3>Subtítulos</h3>
+            <p>Registre las opciones de subtítulos:</p>
+            <div class="input-default div-subtitulos">
+                <span class="material-icons">closed_caption</span>
+                <input type="text" placeholder="Ingrese subtítulos" id="txt-subtitulos" required>
+                <button class="btn-general-menu" id="btn-registrar-subtitulo">
+                            Ingresar
+                    </button>
+            </div>
+            <form class="form-buscar">
+                <div class="input-default">
+                    <span class="material-icons">
+                        search
+                    </span>
+                    <input type="text" placeholder="Buscar" id="txt-buscar-subtitulo">
+
+                </div>
+            </form>
+            <p>Lista de subtítulos en el sistema:</p>
+            <div class="tableContainer">
+                <table class="Table" id="tbl-subtitulos">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Subtítulos</th>
+                            <th colspan="2">Modificar</th>
+                        </tr>
+                    </thead>
+                    <tbody class=cuerpoTabla>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="Categorias" class="tabcontent">
+            <h2>Mantenimiento de catálogos del sistema</h2>
+            <h3>Categorías de películas</h3>
+            <p>Registre las opciones de categorías de película:</p>
+            <div class="input-default div-categorias">
+                <span class="material-icons">
+                        category
+                        </span>
+                <input type="text" placeholder="Ingrese categorías" id="txt-categorias" required>
+                <button class="btn-general-menu" id="btn-registrar-categoriaPelicula">
+                            Ingresar
+                    </button>
+            </div>
+            <form class="form-buscar">
+                <div class="input-default">
+                    <span class="material-icons">
+                        search
+                    </span>
+                    <input type="text" placeholder="Buscar" id="txt-buscar-categoria">
+
+                </div>
+            </form>
+            <p>Lista de categorías de las películas:</p>
+
+            <div class="tableContainer">
+                <table class="Table" id="tbl-categorias">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Categorías</th>
+                            <th colspan="2">Modificar</th>
+                        </tr>
+                    </thead>
+                    <tbody class=cuerpoTabla>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="Salas" class="tabcontent">
+            <h2>Mantenimiento de catálogos del sistema</h2>
+            <h3>Tipos de salas</h3>
+            <p>Registre las opciones de tipos de salas en los cines:</p>
+            <div class="input-default div-salas">
+                <span class="material-icons">
+                        living
+                        </span>
+                <input type="text" placeholder="Ingrese tipo de salas" id="txt-salas" required>
+                <button class="btn-general-menu" id="btn-registrar-sala">
+                            Ingresar
+                    </button>
+            </div>
+            <form class="form-buscar">
+                <div class="input-default">
+                    <span class="material-icons">
+                        search
+                    </span>
+                    <input type="text" placeholder="Buscar" id="txt-buscar-sala">
+
+                </div>
+            </form>
+            <p>Lista de salas en los cines:</p>
+            <div class="tableContainer">
+                <table class="Table" id="tbl-salas">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Tipo de Salas</th>
+                            <th colspan="2">Modificar</th>
+                        </tr>
+                    </thead>
+                    <tbody class=cuerpoTabla>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <div id="Asientos" class="tabcontent">
+            <h2>Mantenimiento de catálogos del sistema</h2>
+            <h3>Tipo de asientos</h3>
+            <p>Registre las opciones de tipos de asientos:</p>
+            <div class="input-default div-asiento">
+                <span class="material-icons">
+                        chair
+                        </span>
+                <input type="text" placeholder="Ingrese tipo de asientos" id="txt-asiento" id="form-asientos" required>
+                <button class="btn-general-menu" id="btn-registrar-asiento">
+                            Ingresar
+                    </button>
+            </div>
+            <form class="form-buscar">
+                <div class="input-default">
+                    <span class="material-icons">
+                        search
+                    </span>
+                    <input type="text" placeholder="Buscar" id="txt-buscar-asiento">
+
+                </div>
+            </form>
+            <p>Lista de tipos de asientos en los cines:</p>
+            <div class="tableContainer">
+                <table class="Table" id="tbl-asiento">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Tipo de Asiento</th>
+                            <th colspan="2">Modificar</th>
+                        </tr>
+                    </thead>
+                    <tbody class=cuerpoTabla>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="Condiciones" class="tabcontent">
+            <h2>Mantenimiento de catálogos del sistema</h2>
+            <h3>Términos y condiciones</h3>
+            <section class="terminosycondiciones">
+
+                <div class="bloque1">
+                    <p>Registre los términos y condiciones al comprar los tiquetes:</p>
+                    <div class="input-condiciones div-condiciones">
+                        <span class="material-icons">policy</span>
+                        <textarea name="mensaje" placeholder="Ingrese términos y condiciones" id="txt-condiciones"></textarea>
+                    </div>
+                    <button class="btn-general-condiciones" id="btn-registrar-condicion">Ingresar</button>
+                    <form class="form-buscar">
+
+                        <div class="input-default">
+                            <span class="material-icons">
+                                search
+                            </span>
+                            <input type="text" placeholder="Buscar" id="txt-buscar-condicion">
+
+                        </div>
+                    </form>
+                    <div>
+                        <p>Lista de términos y condiciones:</p>
+                        <div class="tableContainer">
+                            <table class="Table" id="tbl-condiciones">
+                                <thead>
+                                    <tr>
+                                        <th>Código</th>
+                                        <th>Condiciones y Términos</th>
+                                        <th colspan="2">Modificar</th>
+                                    </tr>
+                                </thead>
+                                <tbody class=cuerpoTabla>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </section>
+
+        </div>
+
+    </div>
+
+    <!--Footer G-->
+
+    <footer>
+        <div class="container">
+            <!--Todo class debe llevar la sección a la que peretenece-->
+            <div class="row">
+                <div class="columna">
+                    <h8>
+                        ¿Quiénes somos?
+                    </h8>
+                </div>
+                <div class="columna">
+                    <h8>
+                        Redes Sociales
+                    </h8>
+                    <ul class="redes">
+                        <li>
+                            <a href="# ">
+                                <i class="fab fa-facebook-square "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <i class="fab fa-linkedin "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <i class="fab fa-instagram "></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="columna ">
+                    <h8>
+                        Contáctenos
+                    </h8>
+                    <ul class="contactos">
+                        <li>
+                            <a href="https://api.whatsapp.com/send/?phone=50683077557&text=Hola+Tico-Cinemas te saluda+&app_absent=0 ">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <i class="far fa-envelope"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="barra-footer ">
+            &copy; Derechos Reservados - 2021
+        </div>
+    </footer>
+
+</body>
+<!--JavaScript-->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/js/servicios-general.js"></script>
+<script src="/js/mantenimiento/mantenimientoDeCatalogo.js"></script>
+<script src="/js/mantenimiento/mantenimientoIdiomas.js"></script>
+<script src="/js/mantenimiento/mantenimientoSubtitulos.js"></script>
+<script src="/js/mantenimiento/mantenimientoCategorias.js"></script>
+<script src="/js/mantenimiento/mantenimientoSalas.js"></script>
+<script src="/js/mantenimiento/mantenimientoAsientos.js"></script>
+<script src="/js/mantenimiento/mantenimientoCondiciones.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</html>

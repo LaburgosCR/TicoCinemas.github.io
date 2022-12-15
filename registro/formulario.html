@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- 1.Archivo de reset -->
+        <link rel="stylesheet" href="/css/reset.css">
+
+        <!--2. Archivos de google font G-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <script src="https://kit.fontawesome.com/5185a7a81a.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Secular+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!--estilo archivo css-->
+
+        <link rel="stylesheet" href="/css/general.css">
+        <link rel="stylesheet" href="/css/registro/formulario.css">
+        <title>Inicio | Tico-Cinemas</title>
+    </head>
+</head>
+
+<body>
+
+    <!--Header principal G-->
+    <header class="header-principal">
+        <div class="logo">
+            <a href="/html/index.html">
+                <img src="/img/logo2.jpeg" alt="">
+            </a>
+        </div>
+        <nav>
+
+            <button class="btn-general ">
+            <a href="/html/iniciar-sesion.html"> Ingresar</a>
+            </button>
+
+            <button class="btn-general ">
+                <a href="/html/index.html "> 
+                    <i class="fas fa-home"></i>
+                </a>
+            </button>
+        </nav>
+    </header>
+    <h1>Bienvenidos a Tico Cinemas</h1>
+    <section class="formulario">
+
+        <div class="bloque1">
+
+            <form class="bloques" action="">
+
+                <div class="input-default">
+                    <h2>Formulario de registro</h2>
+                    <label for="primerNombre"> Primer nombre:</label>
+                    <input type="text" name="primer-nombre" placeholder="" id="txt-nombre" class="div-nombre">
+                </div>
+                <div class="input-default">
+                    <label for="segundoNombre"> Segundo nombre:</label>
+                    <input type="text" name="segundo-nombre" class="form-control" placeholder="" id="txt-SegundoNombre">
+                    <p class="notas">*Campo opcional</p>
+                </div>
+
+                <div class="input-default">
+
+                    <label for="primerApellido"> Primer apellido:</label>
+                    <input type="text" name="primer-apellido" class="div-apellido" placeholder="" id="txt-apellido">
+                </div>
+                <div class="input-default">
+                    <label for="segundoApellido"> Segundo apellido:</label>
+                    <input type="text" name="segundo-apellido" class="form-control" placeholder="" id="txt-SegundoApellido">
+                    <p class="notas">*Campo opcional</p>
+                </div>
+                <div class="input-default">
+                    <label for="telefono"> Teléfono:</label>
+                    <input type="text" name="telefono" class="div-telefono" placeholder="" id="txt-telefono">
+                </div>
+
+                <div class="input-default">
+                    <label for="correo"> Correo electrónico:</label>
+                    <input type="text" name="correo" class="div-correo" placeholder="" id="txt-correo">
+                </div>
+
+                <div class="input-default">
+                    <label for="contrasenna"> Contraseña:</label>
+                    <input type="password" name="password" class="div-password" placeholder="" id="txt-password">
+                </div>
+
+                <div class="input-default">
+                    <label for="contrasenna"> Confirme contraseña:</label>
+                    <input type="password" name="password" class="div-confirmPassword" placeholder="" id="txt-confirmPassword">
+                </div>
+                <div class="condiciones">
+                    <input type="checkbox" class="div-check" id="checkbox">
+                    <label class="form-check-label" for="exampleCheck1">Aceptar términos y condiciones</label>
+                    <p>
+                        <a href="">Ver términos y condiciones</a>
+                    </p>
+                </div>
+
+            </form>
+
+        </div>
+        <div class="bloque2">
+            <div class="user-image">
+                <div class="img-perfil">
+                    <label for="imagenes"> Seleccionar perfil:</label>
+                    <div>
+                        <img id="foto-usuario">
+                        <div class="btn-img-guardar">
+                            <button type="button" class="btn-general" id="txt-img-guardar">Subir foto</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="img-perfil">
+                    <label for="imagenes"> Seleccionar avatar:</label>
+                    <img src="/img/jedi.jpg" alt="">
+                    <div class="btn-img-guardar">
+                        <button type="button" class="btn-general" id="txt-avatar-guardar">
+                            <a href="">Subir Avatar</a> 
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <form action="">
+                <div class="input-default">
+                    <label for="imagenes"> Seleccione identificación:</label>
+                    <select class="div-tipoid" id="tipoIDSelector">
+                    <option value="">Seleccionar</option>
+                    <option value="Cédula Nacional">Cédula Nacional</option>
+                    <option value="Pasaporte">Pasaporte</option>
+                    <option value="Cédula de residencia">Cédula de Residencia</option> 
+                    </select>
+                </div>
+                <div class="input-default">
+                    <label for="id"> No. de identificación:</label>
+                    <input type="number" id="userid" class="div-userid" placeholder="" min="0">
+                </div>
+                <div class="input-default">
+                    <label for="start">Fecha de Nacimiento:</label>
+                    <input type="date" id="fechaNacimiento" class="div-date">
+                </div>
+                <div class="btn-form-guardar">
+                    <button type="button" class="btn-general" id="txt-guardar">
+                    Guardar perfil
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!--Footer G-->
+    <footer>
+        <div class="container">
+            <!--Todo class debe llevar la sección a la que peretenece-->
+            <div class="row">
+                <div class="columna">
+                    <img src=" " class="logo-footer ">
+                    <h3>
+                        ¿Quiénes somos?
+                    </h3>
+                </div>
+                <div class="columna">
+                    <h3>
+                        Redes Sociales
+                    </h3>
+                    <ul class="redes">
+                        <li>
+                            <a href="# ">
+                                <i class="fab fa-facebook-square "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <i class="fab fa-linkedin "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <i class="fab fa-instagram "></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="columna ">
+                    <h3>
+                        Contáctenos
+                    </h3>
+                    <ul class="contactos">
+                        <li>
+                            <a href="https://api.whatsapp.com/send/?phone=50683077557&text=Hola+Tico-Cinemas te saluda+&app_absent=0 ">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <i class="far fa-envelope"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="barra-footer ">
+            &copy; Derechos Reservados - 2021
+        </div>
+    </footer>
+    <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/servicios-general.js"></script>
+    <script src="/js/registro/formularioRegistro.js"></script>
+    <script src="/js/servicios-imagen.js"></script>
+
+
+
+</body>
+
+</html>

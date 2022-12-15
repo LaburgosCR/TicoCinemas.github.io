@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Secular One', sans-serif;
+}
+
+.formulario {
+    display: block;
+    width: 100%;
+}
+
+.formulario .bloques {
+    display: flex;
+}
+
+.bloque1 {
+    width: 50%;
+}
+
+.bloque2 {
+    width: 50%;
+}
+
+.container-rPago {
+    border: solid #08304e 3px;
+    display: flex;
+    justify-content: center;
+    padding: 0 15%;
+    background-color: #ccc;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.h1-rPago {
+    margin-top: 10px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    font-size: 30px;
+    color: #082032;
+}
+
+.h3-rPago {
+    padding-bottom: 15px;
+    font-size: 25px;
+}
+
+input[type=text] {
+    width: 80%;
+    padding: 4px;
+    border: 1px solid #ccc;
+}
+
+
+
+label {
+    padding-top: 10px;
+    display: block;
+}
+
+.icon-container-rPago {
+    padding: 7px 0 30 20;
+    font-size: 24px;
+}
+
+.infocc-rPago {
+    padding-top: 10px;
+}
+
+.col-infoGeneral-rPago select {
+    border: none;
+    font-size: 15px;
+    padding: 4px;
+    color: gray;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.btn-form-guardar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.btn-form-guardar .btn-general {
+    width: 50%;
+}
+
+.select-error {
+    /*border-bottom: 2px solid #ef5777;*/
+    border: 2px solid #ff0000 !important;
+}
+
+.input-error {
+    /*border-bottom: 2px solid #ef5777;*/
+    border: 2px solid #ff0000 !important;
+}

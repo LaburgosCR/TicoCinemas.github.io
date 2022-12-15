@@ -1,0 +1,330 @@
+        * {
+            box-sizing: border-box;
+            font-family: 'Secular One', sans-serif;
+        }
+        
+        #contenedorCartelera {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 50px;
+            height: 800px;
+        }
+        
+        #contenedorCartelera .menuVertical {
+            float: left;
+            border: 3px solid #08304e;
+            background-color: gray;
+            width: 10%;
+            height: 800px;
+        }
+        
+        .menuVertical button {
+            display: block;
+            background-color: inherit;
+            color: white;
+            padding: 22px 16px;
+            width: 100%;
+            border: none;
+            outline: none;
+            text-align: left;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        /*Cuando se pasa el botón encima*/
+        
+        .menuVertical button:hover {
+            background-color: #08304e;
+            border: 2px solid white;
+        }
+        /*Cuando el menu es seleccionado*/
+        
+        .menuVertical button.active {
+            background-color: #08304e;
+            border: 2px solid white;
+            text-decoration: 2px underline #F0A500;
+            ;
+        }
+        /*sección del menu elegido*/
+        
+        .tabcontent {
+            float: left;
+            padding: 0px 12px;
+            border: 3px solid #08304e;
+            background-color: #ccc;
+            width: 85%;
+            border-left: none;
+            height: 800px;
+        }
+        /*Titulos */
+        
+        h2 {
+            font-size: 30px;
+            margin-top: 20px;
+            margin-left: 10px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #082032;
+        }
+        
+        h3 {
+            font-size: 25px;
+            margin-left: 10px;
+            margin-bottom: 20px;
+        }
+        /*Contenido del tab*/
+        
+        #agregar-pelicula p {
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+        
+        #agregar-sala p {
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+        
+        #lista-peliculas p {
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+        /*solicitud de datos*/
+        
+        .input-default {
+            display: flexbox;
+            justify-content: left;
+        }
+        
+        .input-default input {
+            width: 20%;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-right: 20px;
+            margin-top: 2px;
+        }
+        
+        .info-registroPeliculas .btn-general {
+            width: 50%;
+        }
+        
+        .row-registroPeliculas {
+            /*display: flex;*/
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+            margin: 0 -16px;
+            padding-left: 5%;
+            padding-right: 5%;
+            -ms-flex: 75%;
+            /* IE10 */
+            flex: 75%;
+        }
+        
+        .col-infoGeneral-registroPeliculas {
+            -ms-flex: 33%;
+            /* IE10 */
+            flex: 33%;
+        }
+        
+        .col-infoGeneral-registroPeliculas p:nth-child() {
+            align-self: flex-start;
+        }
+        
+        .col-infoGeneral-registroPeliculas,
+        .col-registroPeliculas {
+            padding: 0 16px;
+        }
+        
+        .container-registroPeliculas {
+            background-color: #ccc;
+        }
+        
+        input[type=text] {
+            width: 80%;
+            margin-bottom: 10px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        
+        input[type=url] {
+            width: 80%;
+            margin-bottom: 10px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        
+        input[type=date] {
+            width: 45%;
+            margin-bottom: 10px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        
+        input[type=time] {
+            width: 30%;
+            margin-bottom: 10px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        
+        label {
+            padding-bottom: 10px;
+            display: block;
+        }
+        
+        .form-registroPeliculas {
+            display: flex;
+            display: flexbox;
+        }
+        
+        .form-buscar {
+            display: inline;
+        }
+        
+        .form-buscar input {
+            width: 20%;
+            margin-bottom: 20px;
+        }
+        
+        .info-registroPeliculas {
+            padding-top: 10px;
+        }
+        
+        .input-error {
+            /*border-bottom: 2px solid #ef5777;*/
+            border: 2px solid #ff0000 !important;
+        }
+        /*Formato de la tabla*/
+        
+        .tabla {
+            width: 90%;
+            margin-left: 24px;
+        }
+        
+        th {
+            padding: 5px;
+            border: 1px solid gray;
+            background-color: #F0A500;
+        }
+        
+        td {
+            padding: 5px;
+            border: 1px solid gray;
+            text-align: center;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #8395a7;
+        }
+        
+        tr:hover {
+            background-color: #08304e;
+            color: white;
+        }
+        
+        .info-registroPeliculas .input-default select {
+            border: none;
+            font-size: 15px;
+            padding: 4px;
+            color: gray;
+            width: 80%;
+            margin-bottom: 10px;
+        }
+        
+        .info-registroPeliculas .input-default .notas {
+            color: #8a8a8a;
+            font-size: small;
+            padding-top: 2;
+        }
+        
+        textarea {
+            margin-bottom: 15px;
+            display: block;
+            height: 100px;
+            font-size: 14px;
+            border: 1px solid white;
+            width: 80%;
+            padding: 3px 10px;
+        }
+        /*image*/
+        
+        .imagen-pelicula img {
+            margin-top: 10px;
+            width: 100%;
+            border: solid white 2px;
+        }
+        
+        .imagen-pelicula {
+            width: 75%;
+            /*va abarcar todo el espacio del cuadro*/
+            object-fit: cover;
+            /*propiedad que solo funciona para etiquetas img o video*/
+            object-position: center;
+        }
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+        
+        @media (max-width: 600px) {
+            .row-registroPeliculas {
+                flex-direction: column-reverse;
+            }
+        }
+        
+        .notas2 {
+            color: #08304e;
+            font-size: medium;
+            font-style: italic;
+            padding-top: 2;
+        }
+        
+        .form-buscar .input-default {
+            display: flex;
+            justify-items: center;
+        }
+        
+        .form-buscar span {
+            margin-top: 5px;
+        }
+        
+        .select-error {
+            /*border-bottom: 2px solid #ef5777;*/
+            border: 2px solid #ff0000 !important;
+        }
+        
+        .textarea-error {
+            /*border-bottom: 2px solid #ef5777;*/
+            border: 2px solid #ff0000 !important;
+        }
+        
+        .Table tr:hover {
+            background-color: #08304e;
+            color: white;
+        }
+        
+        .tabla td:last-child {
+            column-width: 120px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .tabla button {
+            background-color: rgb(20, 36, 80);
+            color: white;
+            margin: 2px;
+            padding: none;
+        }
+        
+        .tabla td {
+            vertical-align: middle;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+        }
+        
+        #imagenPelicula {
+            width: 200px;
+            height: 150px;
+        }

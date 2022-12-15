@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Secular One', sans-serif;
+}
+
+.header-secundario {
+    background: #F0A500;
+    min-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    font-size: 35px;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1a486b;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+label {
+    font-size: 15px;
+    margin: 10px;
+    color: rgb(71, 71, 71);
+}
+
+p {
+    font-size: 15px;
+    margin: 10px;
+    color: rgb(71, 71, 71);
+}
+
+select {
+    border: none;
+    font-size: 15px;
+    padding: 3px;
+    color: gray;
+    width: 40%;
+    margin: 10px;
+}
+
+.header-secundario nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 27%;
+    padding: 10px;
+}
+
+.input-default i {
+    color: #F0A500;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#contenedorInformacionPeliculas {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 900px;
+}
+
+.contenedorInfoPeliculas {
+    float: left;
+    padding: 0px 12px;
+    border: 3px solid #08304e;
+    background-color: #ccc;
+    border-left: none;
+    height: 900px;
+    width: 100%;
+}
+
+.row-infoPeliculas {
+    /*display: flex;*/
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+    padding-left: 5%;
+    padding-right: 5%;
+    -ms-flex: 75%;
+    /* IE10 */
+    flex: 75%;
+}
+
+.col-infoGeneral-infoPeliculas {
+    padding: 0 16px;
+    -ms-flex: 33%;
+    /* IE10 */
+    flex: 33%;
+}
+
+.form-infoPeliculas {
+    display: flex;
+}
+
+.input-default {
+    display: flexbox;
+    justify-content: left;
+}
+
+label {
+    padding-bottom: 10px;
+    display: block;
+}
+
+.btn-general-infoPeliculas {
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.div-imagen {
+    width: 100%;
+    height: 500px;
+    /*va abarcar todo el espacio del cuadro*/
+    object-fit: cover;
+    /*propiedad que solo funciona para etiquetas img o video*/
+    object-position: center;
+    border: solid white 2px;
+}
+
+.input-default .comentarios {
+    margin-top: 10px;
+    border: solid #08304e 1px;
+    border-radius: 8px;
+    background-color: rgb(230, 227, 227);
+    height: 200px;
+}
+
+.input-default .btn-general {
+    width: 98%;
+}
+
+.col-infoGeneral-infoPeliculas .trailer {
+    margin-left: 40%;
+}

@@ -1,0 +1,146 @@
+.header-secundario {
+    background: #F0A500;
+    min-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-secundario nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 27%;
+    padding: 10px;
+}
+
+.container-registroButacas {
+    background-color: #ccc;
+    width: 90%;
+}
+
+#contenedorRegistroButacas {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 900px;
+}
+
+.contenedorButacas {
+    float: left;
+    padding: 0px 12px;
+    background-color: #ccc;
+    height: 900px;
+    width: 100%;
+}
+
+.tbl-opcionesButacas {
+    background-color: #ccc;
+}
+
+.tbl-opcionesButacas i {
+    margin: 10px;
+}
+
+.tbl-opcionesButacas tr {
+    border: hidden;
+    background-color: #ccc;
+}
+
+.tbl-opcionesButacas td {
+    border: hidden;
+}
+
+.tbl-opcionesButacas th tr:nth-child(2) {
+    background-color: #ccc;
+}
+
+.tbl-opcionesButacas tr:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.contenedorButacas .dibujoSala {
+    border: solid #08304e 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.contenedorButacas .dibujoSala .pantalla {
+    background-color: black;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.contenedorButacas .dibujoSala .pantalla p {
+    color: white;
+    font-size: smaller;
+    text-align: center;
+}
+
+.contenedorButacas .tipoAsientos {
+    display: flex;
+    justify-content: center;
+}
+
+.tbl-butacas {
+    background-color: #ccc;
+    width: 50%;
+    align-items: center;
+}
+
+.tbl-butacas tr {
+    background-color: #ccc;
+    margin-bottom: 5px;
+}
+
+.tbl-butacas td {
+    border: hidden;
+}
+
+.tbl-butacas th tr:nth-child(2) {
+    background-color: #ccc;
+}
+
+.tbl-butacas tr:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.tbl-butacas :nth-child(odd) {
+    height: 20px;
+}
+
+.icon-cog-reservado {
+    color: red;
+}
+
+.icon-cog-disponible {
+    color: blue;
+}
+
+.icon-cog-ley7600 {
+    color: yellow;
+}
+
+.icon-cog-covid {
+    color: plum;
+}
+
+.col-infoGeneral-registroUsuario .btn-general {
+    width: 250px;
+}
+
+.datoSeleccionado {
+    font-size: 15px;
+    color: rgb(71, 71, 71);
+}
+
+.col-infoGeneral-registroUsuario .div-cantidadAsientos {
+    width: 50px;
+}

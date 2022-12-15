@@ -1,0 +1,61 @@
+* {
+    font-family: 'Secular One', sans-serif;
+}
+
+body {
+    background-image: url(/img/back-sesion1.png);
+}
+
+.stc-ingresar {
+    display: flex;
+    justify-content: center;
+}
+
+.stc-ingresar h1 {
+    font-size: 55px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+form {
+    background-color: rgba(0, 0, 0, .7);
+    opacity: 1;
+    margin: 100px;
+    padding: 100px;
+}
+
+.material-icons {
+    color: white;
+}
+
+.stc-ingresar form .centro input {
+    width: 70%;
+    font-size: 15px;
+    border: none;
+}
+
+.stc-ingresar form .centro input:focus {
+    background-color: #FFEBCD;
+    border: 2px solid #CB8B07;
+}
+
+.stc-ingresar form .btn-ingresar {
+    display: flex;
+    justify-content: center;
+}
+
+.stc-ingresar form .input-container {
+    margin-bottom: 45px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.input-error {
+    /*border-bottom: 2px solid #ef5777;*/
+    border: 2px solid #ff0000 !important;
+}
+
+.stc-ingresar .centro .btn-ingresar button {
+    width: 200px;
+}
